@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="mainViewModel"
+            type="com.bigjeon.johoblite.viewmodel.MainViewModel" />
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".report.HistoryInquiryFragment">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginRight="20dp"
+                android:layout_weight="5"
+                android:background="@drawable/default_background_child"
+                android:padding="1dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:background="@drawable/default_background_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/stitchingImageNameTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="10dp"
+                        android:text="FAC_001/P21/F.jpg"
+
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:id="@+id/crackLayerFilterBtn"
+                        android:layout_marginEnd="10dp"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="15dp"
+                        android:background="@drawable/default_background_main">
+                        <ImageView
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/ic_layer"
+                            android:backgroundTint="@color/white" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <com.bigjeon.johoblite.library.DrawingView
+                    android:id="@+id/stitchingImageDrawingView"
+                    android:background="@drawable/default_background_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="440dp">
+                </com.bigjeon.johoblite.library.DrawingView>
+                <RelativeLayout
+                    android:padding="1dp"
+                    android:background="@drawable/default_background_normal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/uploadDroneImageRcv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:background="@drawable/default_background_child"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/crackDataRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

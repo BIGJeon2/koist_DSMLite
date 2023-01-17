@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/container"
+    android:layout_margin="6dp"
+    android:padding="1dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:background="@drawable/default_background_child"
+        android:layout_width="70dp"
+        android:layout_height="30dp">
+    <ImageView
+        android:id="@+id/crackTypeImv"
+        android:background="@drawable/ic_crk001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/crackNameTv"
+        android:background="@drawable/default_background_normal"
+        android:gravity="center"
+        android:text="균열"
+        android:textSize="12sp"
+        android:layout_width="70dp"
+        android:layout_height="30dp"/>
+</LinearLayout>

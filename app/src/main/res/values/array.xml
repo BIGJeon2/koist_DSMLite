@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="title_array">
+        <item>Home</item>
+        <item>Upload</item>
+        <item>Analysis</item>
+        <item>Report</item>
+    </string-array>
+    <string-array name="direction_array">
+        <item>Ascending</item>
+        <item>Descending</item>
+    </string-array>
+    <string-array name="subTitle_Home_array">
+        <item>@string/Facility_Home</item>
+        <item>@string/Progress_Home</item>
+        <item>@string/Info_Home</item>
+    </string-array>
+    <string-array name="subTitle_Upload_array">
+        <item>@string/Guide_Upload</item>
+        <item>@string/Upload_Upload</item>
+        <item>@string/Scale_Upload</item>
+        <item>@string/Inspection_Upload</item>
+    </string-array>
+    <string-array name="subTitle_Analysis_array">
+        <item>@string/Stitching_Analysis</item>
+        <item>@string/Stitching_Inspection_Analysis</item>
+        <item>@string/AI_Analysis</item>
+        <item>@string/AI_Inspection_Analysis</item>
+        <item>@string/Remuneration_Investigation_Analysis</item>
+    </string-array>
+    <string-array name="subTitle_Report_array">
+        <item>@string/Digital_Report</item>
+        <item>@string/Original_Report</item>
+        <item>@string/History_Report</item>
+    </string-array>
+</resources>

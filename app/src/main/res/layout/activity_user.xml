@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/default_background_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/pretendardbold"
+            android:text="Setting"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout7">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2.5"
+            android:padding="20dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:background="@drawable/default_under_border_background"
+                android:paddingBottom="10dp"
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                tools:ignore="NestedWeights">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/isAdminTV"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:padding="6dp"
+                    android:src="@color/table_bg_color"
+                    app:civ_border_color="?attr/default_color"
+                    app:civ_border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/isAdminTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_above="@id/defaultProfileImageBtn"
+                    android:gravity="center"
+                    android:text="Administrator" />
+
+                <TextView
+                    android:id="@+id/defaultProfileImageBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/default_background_normal"
+                    android:fontFamily="@font/pretendardbold"
+                    android:gravity="center"
+                    android:text="Set Default Image"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="5"
+                android:layout_width="150dp"
+                android:layout_height="0dp">
+
+                <RelativeLayout
+                    android:id="@+id/basicInfoBtnContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/point1"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:src="?attr/default_color" />
+
+                    <TextView
+                        android:id="@+id/basicInfoBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/point1"
+                        android:fontFamily="@font/pretendardbold"
+                        android:text="Basic Info"
+                        android:textColor="?attr/default_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/passwordBtnContainer"
+                    android:layout_below="@id/basicInfoBtnContainer"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/point2"
+                        android:src="@color/secondary_text_color"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"/>
+
+                    <TextView
+                        android:id="@+id/passwordBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/point2"
+                        android:fontFamily="@font/pretendardbold"
+                        android:text="Password"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/themeBtnContainer"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/passwordBtnContainer"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/point3"
+                        android:layout_width="6dp"
+                        android:layout_height="6dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:src="@color/secondary_text_color" />
+                    <TextView
+                        android:id="@+id/themeBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@id/point3"
+                        android:fontFamily="@font/pretendardbold"
+                        android:text="Theme"
+                        android:textColor="@color/secondary_text_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_weight="0.7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <Button
+                    android:id="@+id/signOutBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/red"
+                    android:fontFamily="@font/pretendardbold"
+                    android:text="Sign Out"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_weight="8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/userInfoViewPager"
+                android:layout_margin="20dp"
+                android:orientation="vertical"
+                android:clipToPadding="false"
+                android:clipChildren="false"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="default_color" format="reference"/>
+    <attr name="transparent_default_color" format="reference"/>
+    <attr name="selected_color" format="reference"/>
+    <attr name="secondary_selected_color" format="reference"/>
+    <attr name="active_color" format="reference"/>
+    <attr name="disable_color" format="reference"/>
+    <attr name="primary_bg_color" format="reference"/>
+    <attr name="progress_status_step_complete_color" format="reference"/>
+    <attr name="progress_status_in_progress_color" format="reference"/>
+    <attr name="progress_status_impossible_color" format="reference"/>
+</resources>

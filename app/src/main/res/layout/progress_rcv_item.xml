@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@drawable/default_background_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/default_background_normal"
+            android:orientation="horizontal"
+            android:paddingTop="9dp"
+            android:paddingBottom="9dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <TextView
+                android:id="@+id/progressDivideTv"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <com.skydoves.progressview.ProgressView
+                android:id="@+id/progressDivideProgressBar"
+                android:layout_weight="15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:progressView_autoAnimate="true"
+                app:progressView_colorBackground="@color/nav_bg_color"
+                app:progressView_colorProgress="?attr/default_color"
+                app:progressView_labelColorInner="@color/white"
+                app:progressView_labelColorOuter="@color/black"
+                app:progressView_labelSize="13sp"
+                app:progressView_labelSpace="10dp"
+                app:progressView_labelTypeface="bold"
+                app:progressView_max="100"
+                app:progressView_min="0"
+                app:progressView_padding="1dp"
+                app:progressView_progress="45"
+                app:progressView_progressFromPrevious="true"
+                app:progressView_radius="5dp" />
+            <RelativeLayout
+                android:id="@+id/progressExpandBtn"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/expandBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_arrow_down"
+                    android:backgroundTint="?attr/default_color" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/progressPlaneRcvContainer"
+            android:visibility="gone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/progressPlaneRcv"
+                tools:listitem="@layout/progress_expandable_list_item"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

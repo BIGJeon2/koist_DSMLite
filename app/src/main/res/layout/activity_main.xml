@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="mainViewModel"
+            type="com.bigjeon.johoblite.viewmodel.MainViewModel" />
+    </data>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/mainDrawerLayout"
+        tools:openDrawer="start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/topLayoutContainer"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:background="@drawable/default_under_border_background"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:id="@+id/toolbarControlBtn"
+                android:layout_width="50dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_hamburger"
+                    android:backgroundTint="?attr/default_color"
+                    android:contentDescription="@string/todo" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/toolbarControlBtn"
+                android:background="@drawable/kmplogo_fit"
+                android:contentDescription="@string/todo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@id/logoImageView"
+                android:fontFamily="@font/pretendardbold"
+                android:text="@string/for_bridges"
+                android:textColor="@color/secondary_text_color"
+                android:textSize="12sp"
+                tools:ignore="RelativeOverlap" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="1dp">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/titleTabLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    app:tabIndicator="?attr/default_color"
+                    app:tabIndicatorHeight="2dp"
+                    app:tabInlineLabel="true"
+                    app:tabPaddingEnd="20dp"
+                    app:tabPaddingStart="20dp"
+                    app:tabRippleColor="?attr/default_color"
+                    app:tabSelectedTextColor="?attr/default_color"
+                    app:tabTextAppearance="@style/tabTextSizeBold"
+                    app:tabTextColor="@color/secondary_text_color"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/userProfileContainer"
+                android:layout_toStartOf="@id/mainNotificationBtn"
+                android:layout_marginRight="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userProfileImage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_centerInParent="true"
+                    android:layout_toStartOf="@id/mainUserNameTv"
+                    android:src="?attr/default_color"
+                    app:civ_border_color="@color/default_border_color"
+                    app:civ_border_width="1dp" />
+                <TextView
+                    android:id="@+id/mainUserNameTv"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="2dp"
+                    android:textColor="@color/secondary_text_color"
+                    android:fontFamily="@font/pretendardregular"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/mainNotificationBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/ic_notification"
+                android:backgroundTint="?attr/default_color"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topLayoutContainer">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/subTitleViewPager2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/mainFrameLayout"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout4">
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_hamburger_container"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            app:headerLayout="@layout/main_custom_toolbar_header"
+            android:layout_width="320dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <include
+                    android:id="@+id/customToolBar"
+                    layout="@layout/main_custom_toolbar_header" />
+                <ExpandableListView
+                    android:id="@+id/toolbarPlaneExpandableListView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/navigationCopyright"
+                    android:layout_below="@id/customToolBar"
+                    android:divider="@android:color/transparent"
+                    android:groupIndicator="@null"
+                    android:scrollbars="none"
+                    tools:listitem="@layout/plane_rcv_item" />
+                <RelativeLayout
+                    android:id="@+id/navigationCopyright"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/nav_bg_color"
+                    android:paddingLeft="26dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="26dp"
+                    android:paddingBottom="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/Copyright"
+                        android:textColor="@color/default_border_color"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+</layout>

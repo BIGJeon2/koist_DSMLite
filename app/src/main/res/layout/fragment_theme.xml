@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".userpage.ThemeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/tv1"
+                    android:background="@drawable/default_under_border_background"
+                    android:text="Theme"
+                    android:gravity="center_vertical"
+                    android:textColor="?attr/default_color"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/pretendardbold"
+                    android:textSize="26sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:ignore="RtlSymmetry" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <RelativeLayout
+                    android:layout_weight="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/pretendardbold"
+                        android:text="Theme"
+                        android:textColor="?attr/default_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="6dp">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/defaultColorBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:civ_border_width="3dp"
+                            app:civ_border_color="@color/default_border_color"
+                            android:src="@color/default_color" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/orangeColorBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:civ_border_width="3dp"
+                            app:civ_border_color="@color/default_border_color"
+                            android:src="@color/default_color_orange" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/greenColorBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="@color/default_border_color"
+                            android:src="@color/default_color_green" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/purpleColorBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:civ_border_width="3dp"
+                            app:civ_border_color="@color/default_border_color"
+                            android:src="@color/default_color_purple" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/brownColorBtn"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:civ_border_width="3dp"
+                            app:civ_border_color="@color/default_border_color"
+                            android:src="@color/default_color_brown" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_weight="6"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <RelativeLayout
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:id="@+id/tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/pretendardbold"
+                        android:text="Preview"
+                        android:textColor="?attr/default_color"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_weight="10"
+                    android:layout_gravity="center"
+                    android:layout_margin="6dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp">
+                    <ImageView
+                        android:id="@+id/previewIMV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_vertical"
+                        android:paddingStart="10dp"
+                        android:textSize="16sp"
+                        tools:ignore="RtlSymmetry" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.7"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <Button
+                    android:id="@+id/saveBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@color/disabled_text_color"
+                    android:text="Save"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

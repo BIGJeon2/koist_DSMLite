@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewContainer"
+    android:background="@drawable/default_background_child"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+    <RelativeLayout
+        android:background="@drawable/default_background_child"
+        android:padding="1dp"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/detectionLayerNumTv"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/pretendardbold"
+
+             />
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_weight="2"
+        android:padding="1dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/detectionLayerTypeImageview"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/todo" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/default_background_child"
+        android:padding="1dp"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/detectionLayerNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+
+            android:gravity="center"
+
+             />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/default_background_child"
+        android:padding="1dp"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/detectionLayerSizeTv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+
+            android:gravity="center"
+
+             />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/default_background_child"
+        android:padding="1dp"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/detectionLayerAreaTv"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+         />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:background="@drawable/default_background_child"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:paddingLeft="20dp"
+        android:paddingTop="14dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/planeIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:backgroundTint="?attr/default_color"
+            android:background="@drawable/ic_mbr003" />
+
+        <TextView
+            android:id="@+id/planeNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="9dp"
+            android:layout_toEndOf="@id/planeIcon"
+            android:text="@string/MBR003"
+            android:textColor="?attr/default_color"
+            android:fontFamily="@font/pretendardbold" />
+
+        <ImageView
+            android:id="@+id/expandControlBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+            android:backgroundTint="?attr/default_color" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

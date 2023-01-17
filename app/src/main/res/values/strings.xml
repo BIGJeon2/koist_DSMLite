@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">johob_DSM</string>
+
+    <string name="file_provider_authority" translatable="false">myfileprovider</string>
+
+    //URL
+    <!--<string name="URL">http://115.95.54.3:80/</string>-->
+    <string name="URL">http://101.101.216.123:5009/</string>
+    <string name="temp">/temp/</string>
+
+    //Login
+    <string name="IDHint">Personal ID.</string>
+    <string name="PasswordHint">Password.</string>
+    <string name="FindAccount">계정 정보 찾기</string>
+    <string name="Copyright">copyright © 2022 (주)KO-MAPPER. Co., Ltd All rights reserved.</string>
+    <string name="ASBtnText">AS 문의</string>
+    <string name="MoreInfoBtnText">부가 정보</string>
+
+    //Title
+    <string name="Home">Home</string>
+    <string name="Upload">Upload</string>
+    <string name="Analysis">Analysis</string>
+    <string name="Report">Report</string>
+
+    //SubTitle
+    <string name="Facility_Home">Facility Info</string>
+    <string name="Progress_Home">Status</string>
+    <string name="Info_Home">Project Info</string>
+    <string name="Guide_Upload">Guide</string>
+    <string name="Upload_Upload">Upload</string>
+    <string name="Scale_Upload">Scale</string>
+    <string name="Inspection_Upload">Inspection</string>
+    <string name="Stitching_Analysis">Stitching</string>
+    <string name="Stitching_Inspection_Analysis">Stitching Inspection</string>
+    <string name="AI_Analysis">A.I Detection</string>
+    <string name="AI_Inspection_Analysis">A.I Detection Inspection</string>
+    <string name="Remuneration_Investigation_Analysis">Remuneration/Investigation</string>
+    <string name="cad_Analysis">3D</string>
+    <string name="Digital_Report">Digital Report</string>
+    <string name="Original_Report">CAD report</string>
+    <string name="History_Report">History Inquiry</string>
+
+    //Text
+    <string name="hongil">홍길동(hongil)</string>
+    <string name="Direction">방향</string>
+    <string name="login">Login</string>
+    <string name="id">ID</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="complete">Complete</string>
+    <string name="close">Close</string>
+    <string name="accessible_facilities">Accessible Facilities</string>
+    <string name="facility">시설물</string>
+    <string name="project">프로젝트</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total">Total</string>
+    <string name="inspection">Inspection</string>
+    <string name="stitching">Stitching</string>
+
+    //상부
+    <string name="MBR001">MBR001</string>
+    <string name="MBR002">MBR002</string>
+    <string name="MBR003">MBR003</string>
+    <string name="MBR004">MBR004</string>
+    <string name="MBR005">MBR005</string>
+    <string name="MBR006">MBR006</string>
+    <string name="MBR007">MBR007</string>
+
+    //하부
+    <string name="MBR008">MBR008</string>
+    <string name="MBR009">MBR009</string>
+    <string name="MBR010">MBR010</string>
+
+    <string name="confirm">Confirm</string>
+    <string name="retake">Retake</string>
+    <string name="retry">Retry</string>
+    <string name="delete">Delete</string>
+    <string name="sector">구역</string>
+    <string name="last_safecheck">최종점검일자</string>
+    <string name="last_safecheck_date">최종진단등급</string>
+    <string name="hint">시설물을 선택하세요.</string>
+    <string name="facility_name">시설물 명</string>
+    <string name="last_safecheck_type">최종안전점검유형</string>
+    <string name="facility_institution">관리기관명</string>
+    <string name="facility_reference_date">데이터 기준 일자</string>
+    <string name="facility_adrress">주소</string>
+    <string name="facility_length">교량연장(m)</string>
+    <string name="facility_width">교량폭(m)</string>
+    <string name="facility_height">교량높이(m)</string>
+    <string name="facility_sprstrct_form">상부구조형식</string>
+    <string name="facility_complete_year">교량준공연도</string>
+    <string name="uploader">Uploader</string>
+    <string name="todo">TODO</string>
+    <string name="section">Section</string>
+    <string name="scale">Scale</string>
+    <string name="images">Images</string>
+    <string name="progress_example_title">진행률 확인 참고</string>
+    <string name="step_complete">Step Complete</string>
+    <string name="in_progress">In Progress</string>
+    <string name="impossible">Impossible</string>
+    <string name="upload_date">Date</string>
+    <string name="file_name">File Name</string>
+    <string name="divider">/</string>
+    <string name="all">All</string>
+    <string name="retake_request">Retake Request</string>
+    <string name="remuneration_data">&lt; Remuneration Data &gt;</string>
+    <string name="system_type">for BRIDGES</string>
+    <string name="non_stitching_image_text">이미지 정합 작업이 완료되지 않았습니다. \n 이미지 정합 완료후 다시 시도해 주세요.</string>
+    <string name="save">SAVE</string>
+    <string name="remuneration_info"><![CDATA[< Remuneration Info >]]></string>
+    <string name="plane">Plane</string>
+    <string name="tutorial"><![CDATA[< Tutorial >]]></string>
+    <string name="do_not_open_for_a_week">Do not open for a week</string>
+    <string name="disable">Disable</string>
+    <string name="for_bridges">for BRIDGES</string>
+    <string name="new_password">New Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="please_select_crack">Please Select Crack.</string>
+
+</resources>

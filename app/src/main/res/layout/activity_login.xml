@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="mainViewModel"
+            type="com.bigjeon.johoblite.viewmodel.MainViewModel" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".LoginActivity">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:background="@drawable/whitle_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    <TextView
+        android:paddingLeft="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/pretendardbold"
+        android:text="@string/system_type"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"/>
+    <RelativeLayout
+        android:id="@+id/imageView"
+        android:visibility="invisible"
+        android:layout_width="784dp"
+        android:layout_height="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:background="@drawable/default_background_child"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="104dp"
+            android:text="@string/login"
+            android:textStyle="bold"
+            android:textColor="?attr/default_color"
+            android:textSize="30sp" />
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="@string/id"
+            android:textColor="?attr/default_color"
+            android:textSize="18sp">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:hint="@string/IDHint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="16sp"
+                android:backgroundTint="?attr/default_color"
+                android:textColorHint="@color/default_text_hint_color"
+                android:textColor="?attr/default_color" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/password"
+            android:textColor="?attr/default_color"
+            android:textSize="18sp">
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:hint="@string/PasswordHint"
+            app:passwordToggleEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textSize="16sp"
+                android:backgroundTint="?attr/default_color"
+                android:textColorHint="@color/default_text_hint_color"
+                android:textColor="?attr/default_color"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:id="@+id/login"
+            android:layout_marginTop="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="?attr/default_color"
+            android:textColor="@color/white"
+            android:text="@string/sign_in" />
+        <Button
+            android:text="@string/FindAccount"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:textColor="?attr/default_color"
+            android:layout_marginTop="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Button>
+        <RelativeLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/ASBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/default_spinner_background"
+                    android:text="@string/ASBtnText"
+                    android:textSize="12sp" />
+                <Button
+                    android:id="@+id/moreInfoBtn"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/default_spinner_background"
+                    android:text="@string/MoreInfoBtnText"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/CopyrightTV"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="6dp"
+            android:text="@string/Copyright"
+            android:textColor="@color/black_99"
+            android:textSize="10sp"
+            tools:ignore="SmallSp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

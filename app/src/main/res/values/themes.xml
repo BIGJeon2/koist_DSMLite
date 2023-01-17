@@ -1,0 +1,178 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Komapperlite.default" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/default_color</item>
+        <item name="colorPrimaryVariant">@color/primary_bg_color</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorAccent">@color/default_color</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/default_color</item>
+        <item name="colorSecondaryVariant">@color/default_color</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="editTextColor">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="textInputOutlinedStyle">@color/default_color</item>
+        <item name="fontFamily">@font/pretendardregular</item>
+        <item name="tabTextAppearance">@style/tabTextSizeBold</item>
+        <item name="default_color">@color/default_color</item>
+        <item name="selected_color">@color/selected_color</item>
+        <item name="secondary_selected_color">@color/secondary_selected_color</item>
+        <item name="active_color">@color/active_color</item>
+        <item name="disable_color">@color/disable_color</item>
+        <item name="primary_bg_color">@color/primary_bg_color</item>
+        <item name="progress_status_step_complete_color">@color/progress_status_step_complete_color</item>
+        <item name="progress_status_in_progress_color">@color/progress_status_in_progress_color</item>
+        <item name="progress_status_impossible_color">@color/progress_status_impossible_color</item>
+        <item name="transparent_default_color">@color/transparent_default_color</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Komapperlite.orange" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/primary_bg_color_orange</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorAccent">@color/default_color_orange</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/default_color_orange</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="editTextColor">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/pretendardregular</item>
+        <item name="tabTextAppearance">@style/tabTextSizeBold</item>
+        <item name="default_color">@color/default_color_orange</item>
+        <item name="selected_color">@color/selected_color_orange</item>
+        <item name="secondary_selected_color">@color/secondary_selected_color_orange</item>
+        <item name="active_color">@color/active_color_orange</item>
+        <item name="disable_color">@color/disable_color_orange</item>
+        <item name="primary_bg_color">@color/primary_bg_color_orange</item>
+        <item name="progress_status_step_complete_color">@color/progress_status_step_complete_color_orange</item>
+        <item name="progress_status_in_progress_color">@color/progress_status_in_progress_color_orange</item>
+        <item name="progress_status_impossible_color">@color/progress_status_impossible_color_orange</item>
+        <item name="transparent_default_color">@color/transparent_default_color_orange</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Komapperlite.green" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/primary_bg_color_green</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorAccent">@color/default_color_green</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/default_color_green</item>
+        <item name="colorSecondaryVariant">@color/default_color_green</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="editTextColor">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/pretendardregular</item>
+        <item name="tabTextAppearance">@style/tabTextSizeBold</item>
+        <item name="default_color">@color/default_color_green</item>
+        <item name="selected_color">@color/selected_color_green</item>
+        <item name="secondary_selected_color">@color/secondary_selected_color_green</item>
+        <item name="active_color">@color/active_color_green</item>
+        <item name="disable_color">@color/disable_color_green</item>
+        <item name="primary_bg_color">@color/primary_bg_color_green</item>
+        <item name="progress_status_step_complete_color">@color/progress_status_step_complete_color_green</item>
+        <item name="progress_status_in_progress_color">@color/progress_status_in_progress_color_green</item>
+        <item name="progress_status_impossible_color">@color/progress_status_impossible_color_green</item>
+        <item name="transparent_default_color">@color/transparent_default_color_green</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Komapperlite.purple" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/primary_bg_color_purple</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorAccent">@color/default_color_purple</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/default_color_purple</item>
+        <item name="colorSecondaryVariant">@color/default_color_purple</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="editTextColor">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/pretendardregular</item>
+        <item name="tabTextAppearance">@style/tabTextSizeBold</item>
+        <item name="default_color">@color/default_color_purple</item>
+        <item name="selected_color">@color/selected_color_purple</item>
+        <item name="secondary_selected_color">@color/secondary_selected_color_purple</item>
+        <item name="active_color">@color/active_color_purple</item>
+        <item name="disable_color">@color/disable_color_purple</item>
+        <item name="primary_bg_color">@color/primary_bg_color_purple</item>
+        <item name="progress_status_step_complete_color">@color/progress_status_step_complete_color_purple</item>
+        <item name="progress_status_in_progress_color">@color/progress_status_in_progress_color_purple</item>
+        <item name="progress_status_impossible_color">@color/progress_status_impossible_color_purple</item>
+        <item name="transparent_default_color">@color/transparent_default_color_purple</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.Komapperlite.brown" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/primary_bg_color_brown</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorAccent">@color/default_color_brown</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/default_color_brown</item>
+        <item name="colorSecondaryVariant">@color/default_color_brown</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="editTextColor">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="fontFamily">@font/pretendardregular</item>
+        <item name="tabTextAppearance">@style/tabTextSizeBold</item>
+        <item name="default_color">@color/default_color_brown</item>
+        <item name="selected_color">@color/selected_color_brown</item>
+        <item name="secondary_selected_color">@color/secondary_selected_color_brown</item>
+        <item name="active_color">@color/active_color_brown</item>
+        <item name="disable_color">@color/disable_color_brown</item>
+        <item name="primary_bg_color">@color/primary_bg_color_brown</item>
+        <item name="progress_status_step_complete_color">@color/progress_status_step_complete_color_brown</item>
+        <item name="progress_status_in_progress_color">@color/progress_status_in_progress_color_brown</item>
+        <item name="progress_status_impossible_color">@color/progress_status_impossible_color_brown</item>
+        <item name="transparent_default_color">@color/transparent_default_color_brown</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SearchAutoCompleteTextView" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="tabTextSizeBold" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/pretendardbold</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:radius">5dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="fontFamily">@font/pretendardregular</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textSize">16sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/black</item>
+        <item name="colorControlNormal">@color/black</item>
+        <item name="colorControlActivated">@color/black</item>
+    </style>
+
+</resources>

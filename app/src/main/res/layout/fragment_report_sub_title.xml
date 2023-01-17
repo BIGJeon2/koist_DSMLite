@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    tools:context=".subtitle.ReportSubTitleFragment">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/subTitleCadReportBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp">
+
+            <TextView
+                android:id="@+id/subTitleCadReportTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/Original_Report"
+                android:textColor="@color/disabled_text_color"
+                 />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/subTitleHistoryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp">
+
+            <TextView
+                android:id="@+id/subTitleHistoryTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/History_Report"
+                android:textColor="@color/disabled_text_color"
+                 />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/subTitleDigitalReportBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp">
+
+            <TextView
+                android:id="@+id/subTitleDigitalReportTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/Digital_Report"
+                android:textColor="@color/disabled_text_color"
+                 />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

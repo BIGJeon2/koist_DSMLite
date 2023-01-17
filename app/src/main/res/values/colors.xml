@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    //공통
+    <color name="title_text_color">#3E3E3E</color>
+    <color name="primary_text_color">#000000</color>
+    <color name="secondary_text_color">#A3A3A3</color>
+    <color name="disabled_text_color">#BEBEBE</color>
+    <color name="default_text_hint_color">#394D5A</color>
+    <color name="default_border_color">#D0D0D0</color>
+    <color name="light_border_color">#F1F1F1</color>
+    <color name="table_bg_color">#FAFAFA</color>
+    <color name="nav_bg_color">#F9F9F9</color>
+    <color name="page_bg_color">#EFEFEF</color>
+    //theme
+    //main
+    <color name="default_color">#002B49</color>
+    <color name="transparent_default_color">#509BCFF3</color>
+    <color name="selected_color">#031B2C</color>
+    <color name="secondary_selected_color">#EBF4FF</color>
+    <color name="active_color">#031B2C</color>
+    <color name="disable_color">#BDC8D0</color>
+    <color name="primary_bg_color">#010E17</color>
+    <color name="progress_status_step_complete_color">#0968AA</color>
+    <color name="progress_status_in_progress_color">#44A2E3</color>
+    <color name="progress_status_impossible_color">#EBF4FF</color>
+    //orange
+    <color name="default_color_orange">#F2AA52</color>
+    <color name="transparent_default_color_orange">#50F4DEC3</color>
+    <color name="selected_color_orange">#E89530</color>
+    <color name="secondary_selected_color_orange">#FFF9EB</color>
+    <color name="active_color_orange">#E89530</color>
+    <color name="disable_color_orange">#FADDBB</color>
+    <color name="primary_bg_color_orange">#4C2900</color>
+    <color name="progress_status_step_complete_color_orange">#ECA855</color>
+    <color name="progress_status_in_progress_color_orange">#FDC37C</color>
+    <color name="progress_status_impossible_color_orange">#FFF9EB</color>
+    //green
+    <color name="default_color_green">#017E3E</color>
+    <color name="transparent_default_color_green">#50CFFAE4</color>
+    <color name="selected_color_green">#005329</color>
+    <color name="secondary_selected_color_green">#EBFFEF</color>
+    <color name="active_color_green">#005329</color>
+    <color name="disable_color_green">#CCE5D8</color>
+    <color name="primary_bg_color_green">#003E1F</color>
+    <color name="progress_status_step_complete_color_green">#005329</color>
+    <color name="progress_status_in_progress_color_green">#019B4C</color>
+    <color name="progress_status_impossible_color_green">#EBFFEF</color>
+    //purple
+    <color name="default_color_purple">#3600AF</color>
+    <color name="transparent_default_color_purple">#50E5DAFD</color>
+    <color name="selected_color_purple">#200068</color>
+    <color name="secondary_selected_color_purple">#F4EBFF</color>
+    <color name="active_color_purple">#200068</color>
+    <color name="disable_color_purple">#D7CCEF</color>
+    <color name="primary_bg_color_purple">#200068</color>
+    <color name="progress_status_step_complete_color_purple">#652EE1</color>
+    <color name="progress_status_in_progress_color_purple">#8C6ECF</color>
+    <color name="progress_status_impossible_color_purple">#D6C5EA</color>
+
+    //brown
+    <color name="default_color_brown">#51332A</color>
+    <color name="transparent_default_color_brown">#50F6CFC3</color>
+    <color name="selected_color_brown">#2B160F</color>
+    <color name="secondary_selected_color_brown">#FFF9F6</color>
+    <color name="active_color_brown">#2B160F</color>
+    <color name="disable_color_brown">#CBC2BF</color>
+    <color name="primary_bg_color_brown">#2B160F</color>
+    <color name="progress_status_step_complete_color_brown">#8C6053</color>
+    <color name="progress_status_in_progress_color_brown">#AE8073</color>
+    <color name="progress_status_impossible_color_brown">#D5B19F</color>
+
+    <color name="red">#E4CA1212</color>
+    <color name="green">#19EB21</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="TRANSPARENT">#00000000</color>
+    <color name="white_50">#50FFFFFF</color>
+    <color name="black_99">#99000000</color>
+
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+</resources>
