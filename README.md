@@ -1,5 +1,5 @@
 # komapperlite
-코매퍼 라이트버전
+코매퍼 라이트버전_조합수조(KOIST)
 
 Language : Kotlin
 Design Tool : Pigma
